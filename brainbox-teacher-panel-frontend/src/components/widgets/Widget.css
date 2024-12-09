@@ -1,0 +1,25 @@
+.widget {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .widget:hover {
+    background: #d0bcac;
+    transform: scale(1.05);
+  }
+  
+  .widget h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .widget p {
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  

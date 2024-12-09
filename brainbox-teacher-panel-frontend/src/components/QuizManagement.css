@@ -1,0 +1,213 @@
+/* General Styles */
+.quiz-management {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e5e1da;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  /* Header */
+  .quiz-management-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-management-header h2 {
+    font-size: 2rem;
+    color: #31473A;
+  }
+  
+  .quiz-management-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #34C759;
+  }
+  
+  /* Quiz Creation Section */
+  .quiz-creation-section {
+    margin-bottom: 30px;
+  }
+  
+  .quiz-title-input,
+  .quiz-start-time-input,
+  .quiz-end-time-input {
+    display: block;
+    width: 880px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-title-input:focus,
+  .quiz-start-time-input:focus,
+  .quiz-end-time-input:focus {
+    outline: none;
+    border: 2px solid #cdb593;
+  }
+  
+  /* Add Questions Section */
+  .add-questions-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #c6c3b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-text-input,
+  .question-options-input,
+  .correct-option-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-text-input:focus,
+  .question-options-input:focus,
+  .correct-option-input:focus {
+    outline: none;
+    border: 2px solid #cdb593;
+  }
+  
+  .add-question-button {
+    padding: 10px 15px;
+    background-color: #cdb593;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-question-button:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* All Quizzes Section */
+  .all-quizzes-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .quiz-card {
+    background-color:#cfc3ba; /* Dark green for cards */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-title {
+    font-size: 1.2rem;
+    color: #31473A;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-questions-count,
+  .quiz-start-time,
+  .quiz-end-time {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  .results-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #c2b39f;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .results-link:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* Submissions Section */
+  .quiz-submissions-section h2 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .submissions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .submission-item {
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quiz-management {
+      padding: 15px;
+    }
+  
+    .quiz-management-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .add-question-button,
+    .results-link {
+      font-size: 1rem;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quiz-management {
+      padding: 10px;
+    }
+  
+    .add-question-button,
+    .results-link {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+  /* Create Quiz Button */
+.create-quiz-button {
+    padding: 10px 15px;
+    background-color: #cdb593; /* Matching the dashboard color */
+    color: #ffffff; /* White text */
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .create-quiz-button:hover {
+    background-color: #b4aaa0; /* Slightly darker shade on hover */
+  }
+  

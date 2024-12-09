@@ -1,0 +1,83 @@
+/* Style for the main container */
+.student-progress {
+    padding: 20px;
+    background-color: #f4f6f8;
+  }
+  
+  .student-progress h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .student-progress-chart {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .student-progress-chart:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .student-progress-chart h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .student-progress-chart p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .student-progress-chart canvas {
+    margin: 0 auto;
+  }
+  
+  .student-progress .error {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .student-progress-chart {
+      width: 100%; /* Full width on small screens */
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .student-progress-chart {
+      width: calc(33.33% - 40px); /* 3 charts per row */
+      margin: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .student-progress-chart {
+      width: calc(25% - 40px); /* 4 charts per row on large screens */
+    }
+  }
+  

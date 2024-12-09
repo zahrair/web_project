@@ -1,0 +1,180 @@
+/* General Styles */
+.zoom-meeting-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e5e1da;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Header */
+.zoom-meeting-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zoom-meeting-header h2 {
+    font-size: 2rem;
+    color: #31473A;
+}
+
+/* Form Section */
+.zoom-meeting-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #c6c3b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-topic-input,
+.meeting-start-time-input,
+.meeting-duration-input {
+    width: 100%; /* Ensure inputs fit within their container */
+    max-width: 820px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-topic-input:focus,
+.meeting-start-time-input:focus,
+.meeting-duration-input:focus {
+    outline: none;
+    border: 2px solid #cdb593;
+}
+
+/* Schedule Meeting Button */
+.schedule-meeting-button {
+    padding: 10px 15px;
+    background-color: #cdb593;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.schedule-meeting-button:hover {
+    background-color: #b4aaa0;
+    transform: translateY(-3px);
+}
+
+.zoom-meeting-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #34C759; /* Bright green for success */
+    margin-top: 15px;
+}
+
+/* Meeting Link Section */
+.meeting-link-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.meeting-link-text {
+    font-size: 1.2rem;
+    color: #31473A;
+}
+
+.meeting-link {
+    color: #ffffff;
+    background-color: #cdb593;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.meeting-link:hover {
+    background-color: #b4aaa0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .zoom-meeting-page {
+        max-width: 700px;
+    }
+
+    .meeting-topic-input,
+    .meeting-start-time-input,
+    .meeting-duration-input {
+        font-size: 0.9rem;
+    }
+
+    .schedule-meeting-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .zoom-meeting-page {
+        padding: 15px;
+    }
+
+    .zoom-meeting-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .meeting-topic-input,
+    .meeting-start-time-input,
+    .meeting-duration-input {
+        font-size: 0.9rem;
+    }
+
+    .schedule-meeting-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .meeting-link-text {
+        font-size: 1rem;
+    }
+
+    .meeting-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .zoom-meeting-page {
+        padding: 10px;
+    }
+
+    .zoom-meeting-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .meeting-topic-input,
+    .meeting-start-time-input,
+    .meeting-duration-input {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .schedule-meeting-button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .meeting-link-text {
+        font-size: 0.9rem;
+    }
+
+    .meeting-link {
+        font-size: 0.8rem;
+    }
+}

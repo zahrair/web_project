@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+  background-color: #f0ece5; /* Light greenish shade */
+  color: #333333; /* Dark text for readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.add-course-container {
+  background-color: #c6c3b6; /* Light neutral background */
+  color: #333333; /* Dark text */
+  padding: 30px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  width: 50%; /* Center align and restrict width */
+  max-width: 700px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-course-container h2 {
+  text-align: center;
+  color: #333333; /* Dark text for header */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-size: 1.2rem;
+  color: #333333; /* Dark text for label */
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+  background-color: #f0f0f0; /* Light input background */
+  color: #333333; /* Dark text inside inputs */
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border: 2px solid #cdb593; /* Highlight color similar to dashboard */
+}
+
+form button {
+  background-color: #cdb593; /* Button color matching dashboard */
+  color: #FFFFFF; /* White text */
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+  transform: translateY(-3px); /* Slight hover effect */
+  background-color: #b4aaa0; /* Lighter shade on hover */
+  color: #FFFFFF; /* Keep white text */
+}
+
+.error {
+  color: #FF4C4C; /* Bright red for errors */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.success {
+  color: #34C759; /* Bright green for success */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-half {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group-half input {
+  flex: 1;
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload-container label {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.file-upload-container input[type="file"] {
+  background-color: #f0f0f0; /* Match input background color */
+  color: #333333; /* Dark text */
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.file-upload-container input[type="file"]::file-selector-button {
+  background-color: #cdb593; /* Match button color */
+  color: #FFFFFF; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.file-upload-container input[type="file"]::file-selector-button:hover {
+  background-color: #b4aaa0; /* Lighter shade on hover */
+  color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .add-course-container {
+    width: 60%;
+    padding: 25px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .add-course-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .file-upload-container input[type="file"]::file-selector-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-course-container {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 20px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .add-course-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .file-upload-container input[type="file"]::file-selector-button {
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-course-container {
+    width: 90%; /* Full width for very small screens */
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .add-course-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .file-upload-container input[type="file"]::file-selector-button {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}

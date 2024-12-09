@@ -1,0 +1,129 @@
+/* General Styles */
+.quiz-results-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #e5e1da;
+  color: #333333; /* Dark text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Header */
+.quiz-results-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-results-header h2 {
+  font-size: 2rem;
+  color: #31473A; /* Darker green */
+}
+
+.quiz-results-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #34C759; /* Bright green for success */
+}
+
+/* Quiz Title */
+.quiz-title-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quiz-title {
+  font-size: 1.8rem;
+  color: #31473A; /* Darker green */
+}
+
+/* Results Table */
+.results-section {
+  margin-top: 20px;
+}
+
+.no-results-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse; /* Remove gaps between table cells */
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-table thead {
+  background-color: #cdb593; /* Matching dashboard theme */
+  color: #ffffff; /* White text for header */
+}
+
+.results-table-header-cell {
+  font-size: 1.2rem;
+  padding: 10px;
+  text-align: left;
+}
+
+.results-table-row {
+  background-color: #ffffff; /* White for rows */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.results-table-row:nth-child(even) {
+  background-color: #f9f9f9; /* Slightly lighter background for alternate rows */
+}
+
+.results-table-row:hover {
+  background-color: #f0ece5; /* Light hover effect */
+}
+
+.results-table-cell {
+  font-size: 1rem;
+  padding: 10px;
+  color: #333333;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-results-page {
+    padding: 15px;
+  }
+
+  .quiz-results-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .quiz-title {
+    font-size: 1.6rem;
+  }
+
+  .results-table-header-cell,
+  .results-table-cell {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-results-page {
+    padding: 10px;
+  }
+
+  .quiz-results-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-title {
+    font-size: 1.4rem;
+  }
+
+  .results-table-header-cell,
+  .results-table-cell {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}

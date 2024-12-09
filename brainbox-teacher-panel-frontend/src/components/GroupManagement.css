@@ -1,0 +1,181 @@
+/* General Styles */
+.group-management {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e5e1da;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  /* Header */
+  .group-management-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .group-management-header h2 {
+    font-size: 2rem;
+    color: #31473A;
+  }
+  
+  .group-management-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #34C759;
+  }
+  
+  /* Create Group Section */
+  .create-group-section {
+    margin-bottom: 30px;
+  }
+  
+  .create-group-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .create-group-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #c6c3b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-name-input,
+  .students-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .students-select {
+    height: 100px;
+    overflow-y: auto;
+  }
+  
+  .group-name-input:focus,
+  .students-select:focus {
+    outline: none;
+    border: 2px solid #cdb593;
+  }
+  
+  .create-group-button {
+    padding: 10px 15px;
+    background-color: #cdb593;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-group-button:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* Existing Groups Section */
+  .group-list-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .group-card {
+    background-color: #c5b3a5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .group-name {
+    font-size: 1.2rem;
+    color: #31473A;
+    margin-bottom: 10px;
+  }
+  
+  .group-members-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .group-member-item {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #555555;
+  }
+  
+  .delete-group-button {
+    background-color: #c2b39f;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-group-button:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .group-management {
+      padding: 15px;
+    }
+  
+    .group-management-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .create-group-form {
+      padding: 15px;
+    }
+  
+    .create-group-button {
+      font-size: 1rem;
+      padding: 8px 12px;
+    }
+  
+    .group-card {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-group-form {
+      padding: 10px;
+    }
+  
+    .create-group-button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  
+    .group-card {
+      padding: 10px;
+    }
+  }
+  

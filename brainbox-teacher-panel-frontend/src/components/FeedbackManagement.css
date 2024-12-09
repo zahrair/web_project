@@ -1,0 +1,187 @@
+/* General Styles */
+.feedback-management {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e5e1da;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  /* Header */
+  .feedback-management-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-management-header h2 {
+    font-size: 2rem;
+    color: #31473A;
+  }
+  
+  .feedback-management-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #34C759;
+  }
+  
+  /* Add Feedback Section */
+  .add-feedback-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #c6c3b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form input:focus,
+  .feedback-form textarea:focus,
+  .feedback-form select:focus {
+    outline: none;
+    border: 2px solid #cdb593;
+  }
+  
+  .feedback-submit-button {
+    padding: 10px 15px;
+    background-color: #cdb593;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-submit-button:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* All Feedback Section */
+  .all-feedback-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feedback-item {
+    background-color:#bda490; /* Dark green for cards */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-item h4 {
+    font-size: 1.2rem;
+    color: #31473A;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-item p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  .feedback-delete-button {
+    background-color: #c2b39f;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-delete-button:hover {
+    background-color: #b4aaa0;
+  }
+  
+  /* Top Rated Students Section */
+  .top-rated-students-section h3 {
+    font-size: 1.5rem;
+    color: #31473A;
+    margin-bottom: 15px;
+  }
+  
+  .top-rated-students-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .top-rated-student-item {
+    font-size: 1rem;
+    background-color: #eaf0ea;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feedback-management {
+      padding: 15px;
+    }
+  
+    .feedback-management-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .feedback-form {
+      padding: 15px;
+    }
+  
+    .feedback-submit-button {
+      font-size: 1rem;
+      padding: 8px 12px;
+    }
+  
+    .feedback-item {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feedback-form {
+      padding: 10px;
+    }
+  
+    .feedback-submit-button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  
+    .feedback-item {
+      padding: 8px;
+    }
+  }
+  

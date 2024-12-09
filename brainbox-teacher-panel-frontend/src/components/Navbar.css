@@ -1,0 +1,251 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #a5a18d; /* Matches dashboard theme */
+  color: #333333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #5e5e5e;
+  background-color: #d6d1c4;
+}
+
+/* User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Collapse Navigation Links into Sidebar */
+  .nav-links {
+    display: none; /* Hide links on small screens */
+  }
+
+  .menu-btn {
+    display: block; /* Show menu button on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 14px; /* Adjust logo text size for smaller screens */
+  }
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #5e5e5e; /* Matches sidebar theme */
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: -250px; /* Hidden by default */
+  top: 0;
+  transition: left 0.3s ease; /* Smooth slide-in effect */
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.open {
+  left: 0; /* Sidebar slides in when open */
+}
+
+.sidebar-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Divider line */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #f9f6f6;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: #bda490; /* Accent color for hover */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-nav ul li:hover {
+  background: #353536; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+  /* Make Sidebar Full Width for Smaller Screens */
+  .sidebar {
+    width: 100%;
+    left: -100%; /* Initially hide off-screen */
+  }
+
+  .sidebar.open {
+    left: 0; /* Slide in from the left */
+  }
+
+  .sidebar-nav ul li {
+    text-align: center; /* Center links on small screens */
+  }
+}
+/* Menu Button */
+.menu-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333333; /* Dark color matching the theme */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px; /* Rounded edges */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.menu-btn:hover {
+  background-color: #d6d1c4; /* Light background on hover */
+  color: #5e5e5e; /* Slightly darker hover color */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Focused State */
+.menu-btn:focus {
+  outline: none; /* Remove default browser focus */
+  box-shadow: 0 0 5px 2px #cdb593; /* Add focus ring */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-btn {
+    font-size: 20px; /* Slightly smaller on medium screens */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-btn {
+    font-size: 18px; /* Smaller for very small screens */
+    padding: 6px;
+  }
+}
+/* Logout Button */
+.user-info button {
+  padding: 10px 15px; /* Comfortable padding for the button */
+  background-color: #e74c3c; /* Red color for logout */
+  color: white; /* White text */
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and focus effects */
+}
+
+/* Hover Effect */
+.user-info button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Focused State */
+.user-info button:focus {
+  outline: none; /* Remove default browser outline */
+  box-shadow: 0 0 5px 2px #e74c3c; /* Add a red focus ring */
+}
+
+/* Disabled State (Optional) */
+.user-info button:disabled {
+  background-color: #bdc3c7; /* Gray for disabled state */
+  color: #7f8c8d; /* Lighter text for disabled state */
+  cursor: not-allowed; /* Show "not allowed" cursor */
+  transform: none; /* Disable hover effects */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-info button {
+    font-size: 0.9rem; /* Smaller font size on medium screens */
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-info button {
+    font-size: 0.8rem; /* Smaller font size for very small screens */
+    padding: 6px 10px;
+  }
+}
